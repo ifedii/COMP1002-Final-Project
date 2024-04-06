@@ -17,6 +17,11 @@ img{
     border-radius: 10px;
 }
 
+.icon .fa{
+    color: black;
+    margin: 0px 13px;
+}
+
 header {
     background-color: #7c5e47;
     color: #fff;
@@ -53,6 +58,7 @@ nav a:hover{
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.989); 
     border-radius: 5px;
     color: black;
+    font-weight: bolder;
 }
 
 section h2{
