@@ -3,7 +3,7 @@ const footer = document.querySelector("footer.footer1");
 
 const headerHTML = `
     <div id="logo"> 
-        <img src="images/weblogo.jpeg">
+        <img src="images/weblogo.jpg">
             <p>COMMODORE INC</p>
     </div>
 
@@ -11,7 +11,7 @@ const headerHTML = `
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Product.html">Product</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
@@ -22,9 +22,9 @@ header.innerHTML = headerHTML;
 const footerHTML = `
         
     <div class="get-email">
-        <form action="POST">
+        <form action="subscribe.php" method="get">
             <label> SUBSCRIBE TO OUR EMAIL LIST</label>
-            <input type="text">
+            <input type="email">
             <button>SUBSCRIBE</button>
         </form>
     </div>
@@ -34,10 +34,10 @@ const footerHTML = `
 
             <h2>SITEMAP</h2>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PRODUCTS</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Product.html">PRODUCTS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
             </ul>
         </div>
 
@@ -47,10 +47,12 @@ const footerHTML = `
                 <li><a href="#">REFUND POLICY</a></li>
                 <li><a href="#">PRIVACY POLICY</a></li>
                 <li><a href="#">TERMS & CONDITIONS</a></li>
-                <!-- <li><a href="#">SHOP</a></li> -->
             </ul>
         
         </div>
     </div>
 `;
 footer.innerHTML = footerHTML;
+
+
+

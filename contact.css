@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Pixelify Sans', Courier, monospace;
+}
+
+body {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.icon .fa{
+    color: black;
+    margin: 0px 13px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+header #logo{
+    color: rgb(255, 3, 255);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+header #logo img{
+    width: 10rem;
+    margin-right: 1.2rem;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+header nav ul li a{
+    margin-right: 15px;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    transition: 0.5s;
+    color: rgb(255, 3, 255);
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.989); 
+    border-radius: 5px;
+    color: black;
+
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    transition: 0.5s;
+}
+nav a:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.989); 
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+}
+
+section h2{
+    margin: 15px;
+}
+
+legend{
+    padding: 10px;
+}
+
+fieldset{
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0px 20px;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.contact-details{
+    padding: 20px 0px;
+    width: 50%;
+    width: 50%;
+    margin: 0px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.form-details{
+    padding: 20px 0px;
+    width: 50%;
+    margin: 0px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    flex: 1;
+}
+
+input[type="text"],input[type="email"],textarea{
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 20px;
+    width: 70%;
+    height: 45px;
+    padding: 5px;
+}
+
+input:hover{
+    box-shadow: 0px 0px 5px 5px rgb(89, 1, 253);
+}
+
+.retro-text {
+    font-size: 24px;
+    color: #7c5e47;
+    letter-spacing: 2px;
+}
+
+.button{
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(255, 3, 255);
+    background-color: black;
+}
+
+.button:hover{
+    transition: ease-in-out 0.2s;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+.retro-button {
+    background-color: #d2a679;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.retro-button:hover {
+    background-color: #a97e57;
+}
+
+footer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    color: rgb(255, 3, 255);
+}
+
+.get-email form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.get-email form label{
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 1.2rem;
+    text-align: center;
+}
+
+.get-email form input[type="email"]{
+    width: 60vw;
+    height: 2.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+
+}
+
+.get-email form button{
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    color: white;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.get-email form button:active{
+    color: rgb(255, 3, 255);
+
+}
+
+footer .footer-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer .footer-nav .footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-nav .footer-content ul{
+    list-style-type: none;
+    margin: 0.5rem 0 5rem 0;
+}
+
+footer .footer-nav .footer-content ul li{
+    margin-top: 0.5rem;
+}
+
+footer .footer-nav .footer-content ul a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+    footer .footer-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content{
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content ul{
+        text-align: center;
+    }
+}
+
+/* Media Query for Responsiveness */
+
+@media screen and (max-width: 600px) {
+    .contact-details,
+    .form-details {
+        width: 100%;
+        margin: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    section.contact {
+        flex-direction: column;
+    }
+
+    footer .footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content {
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content ul {
+        text-align: center;
+    }
+}

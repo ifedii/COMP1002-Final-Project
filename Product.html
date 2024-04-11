@@ -5,26 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- IMPORT GOOGLE FONTS -->
-    <link rel="stylesheet" href="style-prouct-page.css">
+    <link rel="stylesheet" href="/style-prouct-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/weblogo.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <title>Product Page</title>
 </head>
 <body>
-    <header class="header1">
-    </header>
+    <header class="header1"></header>
 
     <main>
-        <form action="">
-            <button for="search">SEARCH</button>
-            <input type="text" placeholder="SEARCH FOR COMMODORES">
+        <form action="search.php">
+            <button>SEARCH</button>
+            <input type="text" placeholder="SEARCH FOR COMMODORES" required>
         </form>
-        
+
+        <!-- product cards container contains the all the product cards -->
         <div class="product-cards">
+            
+            <!-- product card -->
             <div class="card">
 
-                <img src="/images/commodore0.1.jpg" alt="">
+                <!-- image for the product cards -->
+                <img src="images/product2.jpg" alt="g">
+
+                <!-- details of the product cards -->
+                <div class="details">
+                    
+                    <p >CPU: CSG 6510</p>
+                    <p >RAM: 64 kilobytes</p>
+                    <p >ROM: 20 kilobytes</p>
+                    <div class="order">
+                        <button class="addToCart">ADD TO CART</button>
+                        <p class="price">PRICE $999</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/product1.jpg" alt="">
 
                 <div class="details">
                     
@@ -41,7 +63,7 @@
 
             <div class="card">
 
-                <img src="/images/commodore0.1.jpg" alt="">
+                <img src="images/product3.jpg" alt="">
 
                 <div class="details">
                     
@@ -58,7 +80,7 @@
 
             <div class="card">
 
-                <img src="/images/commodore0.1.jpg" alt="">
+                <img src="images/product4.jpg" alt="">
 
                 <div class="details">
                     
@@ -75,7 +97,7 @@
 
             <div class="card">
 
-                <img src="/images/commodore0.1.jpg" alt="">
+                <img src="images/product5.jpg" alt="">
 
                 <div class="details">
                     
@@ -92,7 +114,7 @@
 
             <div class="card">
 
-                <img src="/images/commodore0.1.jpg" alt="">
+                <img src="images/product6.jpg" alt="">
 
                 <div class="details">
                     
@@ -109,24 +131,7 @@
 
             <div class="card">
 
-                <img src="/images/commodore0.1.jpg" alt="">
-
-                <div class="details">
-                    
-                    <p >CPU: CSG 6510</p>
-                    <p >RAM: 64 kilobytes</p>
-                    <p >ROM: 20 kilobytes</p>
-                    <div class="order">
-                        <button class="addToCart">ADD TO CART</button>
-                        <p class="price">PRICE $999</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="/images/commodore0.1.jpg" alt="">
+                <img src="images/product7.jpg" alt="">
 
                 <div class="details">
                     
@@ -145,9 +150,10 @@
     </main>
 
     <footer class="footer1">
+        <!-- footer added via javascript -->
     </footer>
 
-
+    <!-- script for the html -->
     <script src="script.js"></script>
 
 </body>
