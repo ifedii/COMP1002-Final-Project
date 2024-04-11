@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans', Courier, monospace;
+    background-color: black;
+    /* width: 100vw; */
+}
+
+/* add styling fot he body, body is a flexbox */
+body{
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* border: solid; */
+}
+
+/* HEADER STYLING */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+/* style the logo of the header, includes text and image */
+header #logo{
+    color: rgb(255, 3, 255);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* style the logo of the logo */
+header #logo img{
+    width: 10rem;
+    margin-right: 1.2rem;
+}
+
+/* navigation menu */
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* styles the different menu links */
+header nav ul li a{
+    margin-right: 15px;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    color: rgb(255, 3, 255);
+    text-decoration: none;
+}
+
+/* animate a a hover effect  */
+header nav ul li a:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.989); 
+    border-radius: 5px;
+    color: rgb(3, 3, 3);
+}
+/* MAIN BODY STYLING */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+main > form{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 1.5rem;
+    /* height: 3rem; */
+}
+
+main > form > button{
+    margin-right: 15px;
+    background-color: rgb(255, 3, 255);
+    color: black;
+    /* height: 100; */
+    margin-left: 0.5rem;
+    padding: 5px;
+    font-weight: bolder;
+    text-align: center;
+    border: none;
+    font-size: 1.5rem;
+    /* transition: 0.1s; */
+}
+
+/* styles the search button when it is clicked */
+main > form > button:active{
+    background-color: black;
+    color: rgb(255, 3, 255);
+}
+
+main input[type="text"] {
+    width: 40vw;
+    transition: 0.5s;
+    border: 1px solid rgb(255, 3, 255);
+    color: rgb(255, 3, 255);
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }  
+
+main input[type="text"]:hover{
+    border: 1px solid #008CFF;
+    box-shadow: 0 0 10px rgb(255, 3, 255); 
+}
+
+
+/* styling for the products card container */
+main .product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+
+}
+
+/* styles individual cards */
+main .product-cards .card{
+    /* width: 25vw; */
+    padding: .5rem;
+    width: 45%;
+    min-width: 200px;
+    color: rgb(255, 3, 255);
+    border: 1px solid rgb(255, 3, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin: 0.5rem;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+/* animates a glover effect on each card */
+main .product-cards .card:hover{
+    border: 1px solid #008CFF;
+    box-shadow: 0 0 10px rgb(255, 3, 255); 
+}
+
+/* style for card details also a flex box */
+main .product-cards .card .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+
+}
+
+/* styliing for the price and add to cart button container */
+main .product-cards .card .details .order{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+
+/* adds a margin to the price */
+main .product-cards .card .details .order .price{
+    margin-right: 0.4rem;
+    /* border: solid; */
+}
+
+/* styles the add to cart button */
+main .product-cards .card .details .order button{
+    /* ?margin-top: 0.3rem; */
+    /* align-self: end; */
+    background-color: rgb(255, 3, 255);
+    border-radius: 5px;
+    font-weight: bolder;
+    color: black;
+    border: solid rgb(255, 3, 255);
+    padding: 0.3rem;
+    transition: 0.2s;
+    
+}
+
+/* shrinks the the add to cart button */
+main .product-cards .card .details .order button:hover{
+    border: none;
+    /* box-shadow: 0 0 10px #008CFF  */
+}
+
+/* styling for the product images */
+main .product-cards .card img{
+    /* width of the image is 100% of the card  and the height is auto*/
+    width: 90%;
+    height: auto;
+}
+
+/* FOOTER -> flexbox */
+
+footer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    color: rgb(255, 3, 255);
+}
+
+/* styling for the get email form -> flexbox*/
+.get-email form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+/* style the label "SUBSCRIBE TO OUR EMAIL LIST" */
+.get-email form label{
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 1.2rem;
+    text-align: center;
+}
+
+/* styles the email input */
+.get-email form input[type="email"]{
+    width: 60vw;
+    height: 2.5rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid rgb(255, 3, 255);
+    color: rgb(255, 3, 255);
+    padding: 0.4rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+/* adds a glow and border effect on the email input */
+.get-email form input[type="email"]:hover{
+    border: 1px solid #008CFF;
+    box-shadow: 0 0 10px rgb(255, 3, 255); 
+}
+
+/* styling for the subscribe button */
+.get-email form button{
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    color: white;
+    background-color: black;
+    border: solid rgb(255, 3, 255);
+    border-radius: 5px;
+    color: rgb(255, 3, 255);
+    transition: 0.2s;
+}
+
+/* shrinks and changes the border of the subscribe button */
+.get-email form button:hover{
+    border: 1px solid #008CFF;
+    box-shadow: 0 0 10px rgb(255, 3, 255); 
+
+}
+
+/* footer navigation -> flexbox */
+footer .footer-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* general styling for the footer */
+footer .footer-nav .footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+/* styles the unodored lists in each footer content container */
+footer .footer-nav .footer-content ul{
+    list-style-type: none;
+    margin: 0.5rem 0 5rem 0;
+}
+
+/* styles each element of the of the unordered list */
+footer .footer-nav .footer-content ul li{
+    margin-top: 0.5rem;
+}
+
+/* resets the links in the unodered list */
+footer .footer-nav .footer-content ul a{
+    color: white;
+    text-decoration: none;
+}
+
+/* media query for responsiveness of smaller devices     */
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+    footer .footer-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content{
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content ul{
+        text-align: center;
+    }
+
+    
+}

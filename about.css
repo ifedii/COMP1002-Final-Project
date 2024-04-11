@@ -1,34 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Pixelify Sans', Courier, monospace;
+}
+
 body {
-    background-color: #f5e1da;
+    background-color: white;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-img{
-    width: 250px;
-    border-radius: 10px;
-}
-
-header {
-    background-color: #7c5e47;
-    color: #fff;
-    padding: 20px;
-    background-image:url(images/slider.jpg);
-    background-size: cover;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-nav {
+header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+header #logo{
+    color: rgb(255, 3, 255);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+header #logo img{
+    width: 10rem;
+    margin-right: 1.2rem;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+header nav ul li a{
+    margin-right: 15px;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    transition: 0.5s;
+    color: rgb(255, 3, 255);
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.989); 
+    border-radius: 5px;
+    color: rgb(3, 3, 3);
+}
+
+.teams{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-col{
+    flex-basis: 32%;
+    border-radius: 15px;
+    position: relative;
+    border: 4px solid black;
+    background-color: black;
+}
+
+.team-col a {
+    color: rgb(255, 3, 255);;
+}
+
+.layer{
     background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+}
+
+.layer p{
+    width: 100%;
+    color: black;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover p{
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    opacity: 1;
     padding: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 20px rgb(89, 1, 253); 
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.team-col img{
+    width: 100%;
+    display: block;
+    flex-direction: row;
+}
+
+.about-us{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.column{
+    flex-basis: 50%;
+    padding: 30px 2px;
 }
 
 nav a {
@@ -47,6 +150,7 @@ nav a:hover{
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.989); 
     border-radius: 5px;
     color: black;
+    font-weight: bolder;
 }
 
 section {
@@ -75,15 +179,142 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.retro-button:hover {
-    background-color: #a97e57;
+footer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    color: rgb(255, 3, 255);
 }
 
-footer {
-    background-color: #7c5e47;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+.get-email form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.get-email form label{
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 1.2rem;
+    text-align: center;
+}
+
+.get-email form input[type="email"]{
+    width: 60vw;
+    height: 2.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.get-email form input:hover{
+    box-shadow: 0px 0px 5px 5px rgb(89, 1, 253);
+}
+
+.get-email form button{
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    color: white;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.get-email form button:active{
+    color: rgb(255, 3, 255);
+
+}
+
+footer .footer-nav{
+    display: flex;
+    justify-content: space-around;
     width: 100%;
+}
+
+footer .footer-nav .footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-nav .footer-content ul{
+    list-style-type: none;
+    margin: 0.5rem 0 5rem 0;
+}
+
+footer .footer-nav .footer-content ul li{
+    margin-top: 0.5rem;
+}
+
+footer .footer-nav .footer-content ul a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+    footer .footer-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content{
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content ul{
+        text-align: center;
+    }
+}
+
+/* Media Query for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .about-us {
+        width: 80%;
+        /* Takes 80% of screen size space */
+    }
+
+    .column {
+        flex-basis: 100%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-col {
+        flex-basis: 45%;
+        margin-bottom: 20px;
+    }
+
+    .layer p {
+        width: 90%;
+    }
+
+    .get-email form input[type="text"] {
+        width: 90%;
+    }
+
+    footer .footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content {
+        align-items: center;
+    }
+
+    footer .footer-nav .footer-content ul {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-col {
+        flex-basis: 100%;
+    }
 }
